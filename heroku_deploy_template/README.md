@@ -7,8 +7,7 @@ You can deploy and run almost any python application with any dependencies.
 1. Download or clone this repository
 2. Install the python module pipreqs:
 
-      From PyPI: pip install pipreqs
-      From Github: https://github.com/bndr/pipreqs.git
+   pip install pipreqs or clone this repo @https://github.com/bndr/pipreqs.git
 
 2. Register on [Heroku](https://www.heroku.com/)
 3. Download and install [Heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-python#set-up)
@@ -33,12 +32,12 @@ You can deploy and run almost any python application with any dependencies.
    been deployed, add the optional -startapp argument.
 
     ```bash
-      python3 heroku_deploy.py update -startapp
+    python3 heroku_deploy.py update -startapp
     ```
 
 ### Dependencies
 
-* [git](https://github.com/bndr/pipreqs.git)
+* [pipreqs](https://github.com/bndr/pipreqs.git)
 
 ## Author
 
