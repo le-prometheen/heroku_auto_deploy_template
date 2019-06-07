@@ -1,0 +1,36 @@
+{
+    "Args": {
+        "app_name": [
+            "app_name",
+            "The Name Of Your Application."
+        ],
+        "app_type": [
+            "app_type",
+            "Determines Worker Status: options=worker or web"
+        ],
+        "filename": [
+            "filename",
+            "Name Of The Main Executable File Without The Extension."
+        ],
+        "update": [
+            "update",
+            "Making And Commiting Changes To An Already Deployed App"
+        ],
+        "launch": [
+            "-startapp",
+            "Configures Dynos And Launches The Deployed App"
+        ]
+    },
+    "Cmds": [
+        "heroku auth:login -i",
+        "git init",
+        "heroku apps:create {0}",
+        "git add .",
+        "git commit -m \"init\"",
+        "git commit -m \"revision\"",
+        "git push heroku master",
+        "heroku ps:scale worker=1",
+        "heroku logs --tail"
+    ]
+
+ }
