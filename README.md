@@ -1,5 +1,3 @@
-You can deploy and run almost any python application with any dependencies.
-
 ## Getting Started
 
 1. Download or clone this repository
